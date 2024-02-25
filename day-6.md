@@ -85,3 +85,26 @@ for i in 1...100_000 {
 }
 
 print(multiples)
+
+
+// Checkpoint 3
+
+let number3 = 3
+let number5 = 5
+
+for z in 1...100 {
+    if z.isMultiple(of: number3) && z.isMultiple(of: number5) {
+        print("\(z): FizzBuzz")
+        // if multiple of 3 and 5 -> print "FizzBuzz"
+    }
+    else if z.isMultiple(of: number3) {
+        print("\(z): Fizz")
+        // if multiple of 3 -> print "Fizz"
+    } else if z.isMultiple(of: number5) {
+        print("\(z): Buzz")
+        // if multiple of 5 -> print "Buzz"
+    } else {
+        print("\(z): \(z)")
+        // otherwise -> print just the number
+    }
+}
