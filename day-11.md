@@ -68,6 +68,7 @@ struct Employee {
 }
 // use case 2: create examples of my struct
 
+
 // Checkpoint 6
 // create struct to store information about a car: model, number of seats & current gear
 // add method to change gears up and down
