@@ -17,6 +17,6 @@ https://www.hackingwithswift.com/100/swiftui/0
 5. Reyling on Apple`s documetation
 6. Getting lost in Objective-C
 7. Taking shots at other langugages
-
+8. 
 **Ressources**
 https://www.hackingwithswift.com/100/swiftui
