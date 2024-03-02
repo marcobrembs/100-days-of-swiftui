@@ -97,7 +97,7 @@ print(actors.count)
 print(actors.contains("Tom Cruise"))
 
 // Enum (enumerations)
-// A range of particular options
+// range of particular options
 
 enum Weekday {
     case monday
