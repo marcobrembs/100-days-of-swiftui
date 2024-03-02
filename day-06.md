@@ -86,7 +86,6 @@ for i in 1...100_000 {
 
 print(multiples)
 
-
 // Checkpoint 3
 
 let number3 = 3
