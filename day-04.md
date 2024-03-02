@@ -1,7 +1,7 @@
 // type inference
 let surname = "Lasso"
 let score = 0
-
+ 
 // type annotation
 let firstname: String = "Ted"
 let halftimescore: Int = 1
