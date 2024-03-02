@@ -1,4 +1,4 @@
-How to create a variables and constants?
+// How to create a variables and constants?
 
 Coding Convention Camelcase
 Example: playerName
