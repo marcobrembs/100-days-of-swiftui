@@ -1,4 +1,4 @@
-How to store truth with booleans
+How to store truth with boolean
 
 How to join strings together
 
