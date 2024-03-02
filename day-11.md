@@ -92,7 +92,7 @@ struct Car {
             if currentGear > 10 { currentGear = 10 }
         case .down : currentGear -= 1
             if currentGear < 1 { currentGear = 1 }
-        case.neutral : currentGear = 1
+        case .neutral : currentGear = 1
         }
         print("The car model \(carModel) is in gear \(currentGear)")
     }
