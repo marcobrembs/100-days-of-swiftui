@@ -1,4 +1,5 @@
 // if statements
+
 // Scoring
 
 let speed = 88
