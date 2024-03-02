@@ -101,4 +101,5 @@ func printTimesTable2(for number: Int) {
         print("\(i) x \(number) is \(i * number)")
     }
 }
+
 printTimesTable2(for: 5)
