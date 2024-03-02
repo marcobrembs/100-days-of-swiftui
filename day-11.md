@@ -68,7 +68,6 @@ struct Employee {
 }
 // use case 2: create examples of my struct
 
-
 // Checkpoint 6
 // create struct to store information about a car: model, number of seats & current gear
 // add method to change gears up and down
@@ -98,7 +97,7 @@ struct Car {
     }
 }
 
-var audi = Car(carModel: "Audi", numberOfSeats: 4, currentGear: 2)
+var audi = Car(carModel: "Audi", numberOfSeats: 4)
 audi.changeGear(.up)
 audi.changeGear(.down)
 audi.changeGear(.up)
@@ -106,3 +105,4 @@ audi.changeGear(.neutral)
 
 var vw = Car(carModel: "VW", numberOfSeats: 5, currentGear: 3)
 vw.changeGear(.up)
+
