@@ -1,4 +1,4 @@
-// Closures
+// Closures 
 // assign functionality directly to a constant or variable
 
 func greetUser() {
