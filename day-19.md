@@ -43,21 +43,21 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 Section("Your input unit") {
-                    TextField("0,00", value: $inputNumber, format: .number).keyboardType(.decimalPad)
+                    TextField("0.00", value: $inputNumber, format: .number).keyboardType(.decimalPad)
                     Picker("Input unit", selection: $selectedInputUnit) {
                         ForEach(LengthUnit, id: \.self) { unit in
                             Text(unit)
                         }
-                    }
+                    }.pickerStyle(.segmented)
                 }
                 
                 Section("Your output unit") {
-                    Text(outputNumber, format: .number)
+                    Text("\(String(format: "%.2f", outputNumber))")
                     Picker("Output unit", selection: $selectedOutputUnit) {
                         ForEach(LengthUnit, id: \.self) { unit in
                             Text(unit)
                         }
-                    }
+                    }.pickerStyle(.segmented)
                 }
                 
             } .navigationTitle("WeConvert")
