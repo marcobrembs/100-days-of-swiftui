@@ -53,7 +53,9 @@ struct ContentView: View {
                     }.pickerStyle(.navigationLink)
                 }
                 calcuateBedTime
-                    .font(.headline)
+                    .font(.title.bold())
+                    .foregroundStyle(.secondary)
+                    .frame(maxWidth: .infinity)
             }
             .navigationTitle("BetterRest")
         }
