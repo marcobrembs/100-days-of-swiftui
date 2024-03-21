@@ -47,7 +47,7 @@ struct ContentView: View {
                 Text(errorMessage)
             }
             .toolbar {
-                Button("Restart", action: startGame)
+                Button("Restart", action: restartGame)
             }
             .alert(userScoreTitle, isPresented: $showingUserScore) { }
         }
@@ -107,8 +107,6 @@ struct ContentView: View {
                 return
             }
         }
-        usedWords.removeAll()
-        userScore = 0
         
         fatalError("Could not load start.txt from bundle.")
     }
@@ -142,6 +140,13 @@ struct ContentView: View {
         errorMessage = message
         showingError = true
     }
+    
+    func restartGame() {
+        usedWords.removeAll()
+        userScore = 0
+        startGame()
+    }
+
 }
 
 #Preview {
