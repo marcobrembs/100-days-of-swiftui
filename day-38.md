@@ -88,9 +88,9 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                ExpenseSection(title: "Personal", expenses: expenses.personalExpenses, removeItems: removePersonalItems)
+                ExpenseSection(title: "Personal", expenses: expenses.personalExpenses, removeItems: removeItems)
                 
-                ExpenseSection(title: "Business", expenses: expenses.businessExpenses, removeItems: removeBusinessItems)
+                ExpenseSection(title: "Business", expenses: expenses.businessExpenses, removeItems: removeItems)
             }
             .navigationTitle("iExpense")
             .toolbar {
@@ -103,10 +103,8 @@ struct ContentView: View {
             }
         }
     }
-    func removePersonalItems(at offsets: IndexSet) {
-        expenses.items.remove(atOffsets: offsets)
-    }
-    func removeBusinessItems(at offsets: IndexSet) {
+    
+    func removeItems(at offsets: IndexSet) {
         expenses.items.remove(atOffsets: offsets)
     }
 }
