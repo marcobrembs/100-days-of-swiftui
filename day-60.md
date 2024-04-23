@@ -1,1 +1,1 @@
-// Milestone: Projects 10 - 12
+// Challenge Friendster - part 1
