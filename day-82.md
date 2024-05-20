@@ -1,4 +1,65 @@
 //
+//  ContentView.swift
+//  HotProspects
+//
+//  Created by Marco on 17.05.24.
+//
+
+import SwiftUI
+
+struct ContentView: View {
+    var body: some View {
+        TabView {
+            ProspectsView(filter: .none)
+                .tabItem {
+                    Label("Everyone", systemImage: "person.3")
+                }
+            
+            ProspectsView(filter: .contacted)
+                .tabItem {
+                    Label("Contacted", systemImage: "checkmark.circle")
+                }
+            
+            ProspectsView(filter: .uncontracted)
+                .tabItem {
+                    Label("Uncontacted", systemImage: "questionmark.diamond")
+                }
+            
+            MeView()
+                .tabItem {
+                    Label("Me", systemImage: "person.crop.square")
+                }
+        }
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+//
+//  Prospect.swift
+//  HotProspects
+//
+//  Created by Marco on 20.05.24.
+//
+
+import SwiftData
+
+@Model
+class Prospect {
+    var name: String
+    var emailAddress: String
+    var isContacted: Bool
+    
+    init(name: String, emailAddress: String, isContacted: Bool) {
+        self.name = name
+        self.emailAddress = emailAddress
+        self.isContacted = isContacted
+    }
+}
+
+//
 //  ProspectsView.swift
 //  HotProspects
 //
@@ -64,3 +125,23 @@ struct ProspectsView: View {
     ProspectsView(filter: .none)
         .modelContainer(for: Prospect.self)
 }
+
+//
+//  MeView.swift
+//  HotProspects
+//
+//  Created by Marco on 20.05.24.
+//
+
+import SwiftUI
+
+struct MeView: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    MeView()
+}
+
